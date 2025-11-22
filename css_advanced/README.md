@@ -18,15 +18,6 @@ Simple static landing page built with HTML (mock content and local images). Desi
 - (Optional) CSS — add your own stylesheet at `css/style.css`
 - Font Awesome (CDN included in the HTML)
 
-## Installation / Run locally
-
-1. Clone or copy the project folder to your machine.
-2. Ensure the `images/` folder is present alongside `index.html`.
-3. Open `index.html` in your browser, or use a dev server:
-
-- VS Code + Live Server extension
-- Python: `python -m http.server` and open `http://localhost:8000`
-
 ## Notes
 
 - Font Awesome is loaded via CDN in the head of `index.html`. Internet connection required for icons.

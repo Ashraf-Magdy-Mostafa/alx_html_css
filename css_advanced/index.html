@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/4a2b055604.js"
       crossorigin="anonymous"
@@ -13,7 +20,10 @@
   <body>
     <header>
       <nav>
-        <img src="https://fakeimg.pl/250x250?text=Sample+Logo" alt="logo" />
+        <div id="logo">
+          <img src="./images/smile-face.svg" alt="logo" width="30px" />
+          SmileSchool
+        </div>
 
         <ul>
           <li><a href="#">COURSE</a></li>
@@ -23,161 +33,202 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div>
-          <h1>Get schooled</h1>
-          <span>SMILES</span>
-          <span>GRIN</span>
-          <span>LAUGH</span>
+      <section class="hero-section">
+        <div class="hero-mid-section">
+          <h1 id="hero-header">Get schooled</h1>
+          <div id="smile-3">
+            <span>SMILES</span>
+            <span>GRIN</span>
+            <span>LAUGH</span>
+          </div>
           <button>REGISTER FOR FREE</button>
         </div>
-        <div>
-          <h2>Learn from the pros</h2>
-          <div>
-            <div>
-              <img src="./images/1 (3).png" alt="" />
+        <div class="second-header">
+          <h2><span>Learn</span> from the pros</h2>
+          <div id="smile-sample">
+            <div class="sample-dev">
+              <img src="./images/1.png" alt="" />
               <h3>Phillip Massey</h3>
-              <p>« Smile of the year » 2018 - 2019</p>
+              <p>
+                « Smile of the year »<br />
+                2018 - 2019
+              </p>
             </div>
-            <div>
-              <img src="./images/6.png" alt="" />
+            <div class="sample-dev">
+              <img src="./images/3.png" alt="" />
               <h3>Nannie Lawrence</h3>
-              <p>Best « little smile » 2017</p>
+              <p>
+                Best « little smile »<br />
+                2017
+              </p>
             </div>
-            <div>
-              <img src="./images/7.png" alt="" />
+            <div class="sample-dev">
+              <img src="./images/2.png" alt="" />
               <h3>Bruce Walters</h3>
-              <p>Best « Friend Smile » live performance 2019</p>
+              <p>
+                Best « Friend Smile »<br />
+                live performance 2019
+              </p>
             </div>
-            <div>
-              <img src="./images/8.png" alt="" />
+            <div class="sample-dev">
+              <img src="./images/4.png" alt="" />
               <h3>Henry Hughes</h3>
-              <p>« 24h smiles » winner 2016 - 2019</p>
+              <p>
+                « 24h smiles » winner<br />
+                2016 - 2019
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section>
+      <!-- END OF HERO SECTION -->
+
+      <!-- START OF QUOTE SECTION -->
+      <section class="quote-section">
         <div>
-          <img src="./images/Bitmap.png" alt="image" />
+          <img src="./images/5.png" alt="image" />
         </div>
         <div>
           <blockquote>
             « Those tutorials are concise and go straight to the point. I can’t
             think of a better place to learn smiling. And it’s so fun!
           </blockquote>
-          <h3>NAME</h3>
+          <h3>Person NAME</h3>
           <p>weather presenter</p>
         </div>
       </section>
-      <section>
-        <h2>Most popular tutorials</h2>
-        <div>
-          <img src="./images/Bitmap (1).png" alt="" />
-          <h3>Diagonal Smile</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
-          </p>
-          <div>
-            <img src="./images/1 (3).png" alt="" />
-            <h4>Phillip Massey</h4>
+      <!-- END OF QUOTE SECTION -->
+
+      <!-- START OF TUTORIALS SECTION -->
+      <section class="tutorials-section">
+        <h2>Most <span>popular</span> tutorials</h2>
+        <div class="tut-video-container">
+          <div class="video-section">
+            <img src="./images/9.png" alt="" />
+            <h3>Diagonal Smile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <div class="author-section">
+              <img src="./images/1.png" alt="" />
+              <h4>Phillip Massey</h4>
+            </div>
+            <div class="rating-section">
+              <div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+              </div>
+
+              <p>8 min</p>
+            </div>
           </div>
-          <div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
+          <div class="video-section">
+            <img src="./images/7.png" alt="" />
+            <h3>Happy Smile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <div class="author-section">
+              <img src="./images/1.png" alt="" />
+              <h4>Phillip Massey</h4>
+            </div>
+            <div class="rating-section">
+              <div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+              </div>
+              <p>8 min</p>
+            </div>
           </div>
-          <p>8 min</p>
-        </div>
-        <div>
-          <img src="./images/Bitmap (4).png" alt="" />
-          <h3>Happy Smile</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
-          </p>
-          <div>
-            <img src="./images/1 (3).png" alt="" />
-            <h4>Phillip Massey</h4>
+          <div class="video-section">
+            <img src="./images/8.png" alt="" />
+            <h3>Natural Smile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <div class="author-section">
+              <img src="./images/1.png" alt="" />
+              <h4>Phillip Massey</h4>
+            </div>
+            <div class="rating-section">
+              <div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+              </div>
+              <p>8 min</p>
+            </div>
           </div>
-          <div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
+          <div class="video-section">
+            <img src="./images/6.png" alt="" />
+            <h3>Sad Smile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <div class="author-section">
+              <img src="./images/1.png" alt="" />
+              <h4>Phillip Massey</h4>
+            </div>
+            <div class="rating-section">
+              <div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+              </div>
+              <p>8 min</p>
+            </div>
           </div>
-          <p>8 min</p>
-        </div>
-        <div>
-          <img src="./images/Bitmap (3).png" alt="" />
-          <h3>Natural Smile</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
-          </p>
-          <div>
-            <img src="./images/1 (3).png" alt="" />
-            <h4>Phillip Massey</h4>
-          </div>
-          <div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-          </div>
-          <p>8 min</p>
-        </div>
-        <div>
-          <img src="./images/Bitmap (2).png" alt="" />
-          <h3>Sad Smile</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
-          </p>
-          <div>
-            <img src="./images/1 (3).png" alt="" />
-            <h4>Phillip Massey</h4>
-          </div>
-          <div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-            <div><i class="fa-solid fa-star"></i></div>
-          </div>
-          <p>8 min</p>
         </div>
       </section>
-      <section>
-        <h2>Free membership</h2>
-        <div>
-          <img src="./images/smile.svg" alt="" />
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div>
-          <img src="./images/smile.svg" alt="" />
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div>
-          <img src="./images/smile.svg" alt="" />
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div>
-          <img src="./images/smile.svg" alt="" />
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <!-- END OF TUTORIALS SECTION -->
+      <!-- START OF FREE MEMBERSHIP SECTION -->
+      <section class="membership-section">
+        <h2><span>Free </span> membership</h2>
+        <div class="memberships-container">
+          <div class="membership-item">
+            <img src="./images/smile.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="membership-item">
+            <img src="./images/smile.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="membership-item">
+            <img src="./images/smile.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="membership-item">
+            <img src="./images/smile.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
         <button>REGISTER FOR FREE</button>
       </section>
-      <section>
+      <!-- END OF MEMBERS SECTION -->
+      <!-- START OF FAQ SECTION -->
+      <section class="faq-section">
         <h2>F.A.Q</h2>
-        <div>
-          <div>
-            <div>
+        <div class="faq-container">
+          <div class="faq-line">
+            <div class="faq-item">
               <h3>How does this work?</h3>
             </div>
             <div>
@@ -203,7 +254,7 @@
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
           </div>
-          <div>
+          <div class="faq-line">
             <div>
               <h3>How does this work?</h3>
             </div>
@@ -232,11 +283,13 @@
           </div>
         </div>
       </section>
+      <!-- END OF FAQ SECTION -->
     </main>
+    <!-- START OF FOOTER SECTION -->
     <footer>
-      <section>
-        <div>
-          <img src="https://fakeimg.pl/250x250?text=Sample+Logo" alt="logo" />
+      <section class="footer-section">
+        <div class="footer-container">
+          <img src="./images/logo.png" alt="logo" />
           <div>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
