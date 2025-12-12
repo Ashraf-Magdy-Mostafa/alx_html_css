@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "holberton_school-icon";
+  src: url("fonts/holberton_school-icon.eot?sq4eq4");
+  src: url("fonts/holberton_school-icon.eot?sq4eq4#iefix")
+      format("embedded-opentype"),
+    url("fonts/holberton_school-icon.ttf?sq4eq4") format("truetype"),
+    url("fonts/holberton_school-icon.woff?sq4eq4") format("woff"),
+    url("fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "holberton_school-icon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+header {
+  padding: 20px 8%;
+  z-index: 5;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+nav label {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 15px;
+  z-index: 6;
+}
+nav label span,
+nav label span::before,
+nav label span::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  left: 0;
+  transition: 0.3s ease;
+  /* transform-origin: center; */
+  background: black;
+}
+nav label span {
+  top: 50%;
+  width: 50%;
+}
+nav label span::before {
+  top: -5px;
+}
+nav label span::after {
+  top: 5px;
+}
+nav input {
+  display: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #ff6565;
+}
+nav input:checked {
+}
+nav input:checked + label {
+}
+nav input:checked + label span {
+  background: transparent;
+}
+nav input:checked + label span::before {
+  top: 0;
+  transform: rotate(45deg);
+  background: red;
+}
+nav input:checked + label span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: red;
+}
+
+main {
+  /* min-height: calc(100vh + 90px); */
+
+  margin-top: -104px;
+}
+main #hero-section {
+  background-image: url("./headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 50vh;
+  text-align: center;
+  /* max-width: 800px; */
+  margin: 0 auto;
+}
+main #hero-section h2 {
+  font-weight: 800;
+}
+main #hero-section p {
+  font-weight: 600;
+}
+
+main #hero-section button {
+  background-color: #ff6565;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  outline: none;
+  border: 0px;
+  margin: 50px auto;
+}
+main #hero-section button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+main #hero-section p:nth-child(4) {
+  font-weight: 200;
+}
+
+@media (max-width: 770px) {
+  header {
+    padding: 20px 20px;
+  }
+  nav {
+    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  nav label {
+    width: 40px;
+    display: block;
+    position: absolute;
+    left: 30px;
+  }
+  nav img {
+    display: block;
+    max-width: 180px;
+    height: auto;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  nav input:checked ~ ul {
+    display: block;
+    position: absolute;
+    /* left: 50%; */
+    top: 100%;
+  }
+
+  main {
+    padding: 0px 20px;
+    margin-top: -89.7px;
+  }
+}
+
+/* END OF HERO SECTION */
+/* START OF WHAT WE DO SECTION */
+#do-section {
+  padding-top: 50px;
+  /* max-width: 800px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: white;
+  color: #071629;
+  margin: 0 auto;
+}
+#do-section .do-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+#do-section .do-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.holberton_school-icon-sound::before {
+  content: "\e90e";
+  color: #ff6565;
+  font-size: 100px;
+}
+.holberton_school-icon-video::before {
+  content: "\e910";
+  color: #ff6565;
+  font-size: 100px;
+}
+.holberton_school-icon-audio::before {
+  content: "\e90d";
+  font-size: 100px;
+  color: #ff6565;
+}
+.holberton_school-icon-ear::before {
+  content: "\e909";
+  color: #ff6565;
+  font-size: 100px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
