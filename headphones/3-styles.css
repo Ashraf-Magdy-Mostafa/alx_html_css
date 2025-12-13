@@ -1,0 +1,361 @@
+@font-face {
+  font-family: "holberton_school-icon";
+  src: url("fonts/holberton_school-icon.eot?sq4eq4");
+  src: url("fonts/holberton_school-icon.eot?sq4eq4#iefix")
+      format("embedded-opentype"),
+    url("fonts/holberton_school-icon.ttf?sq4eq4") format("truetype"),
+    url("fonts/holberton_school-icon.woff?sq4eq4") format("woff"),
+    url("fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "holberton_school-icon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 8%;
+  z-index: 5;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+nav label {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 15px;
+  z-index: 6;
+}
+nav label span,
+nav label span::before,
+nav label span::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  left: 0;
+  transition: 0.3s ease;
+  /* transform-origin: center; */
+  background: black;
+}
+nav label span {
+  top: 50%;
+  width: 50%;
+}
+nav label span::before {
+  top: -5px;
+}
+nav label span::after {
+  top: 5px;
+}
+nav input {
+  display: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #ff6565;
+}
+nav input:checked {
+}
+nav input:checked + label {
+}
+nav input:checked + label span {
+  background: transparent;
+}
+nav input:checked + label span::before {
+  top: 0;
+  transform: rotate(45deg);
+  background: red;
+}
+nav input:checked + label span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  background: red;
+}
+
+main {
+  margin-top: -104px;
+}
+main #hero-section {
+  background-image: url("./headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 50vh;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+main #hero-section .container {
+  padding: 0px 20px;
+}
+main #hero-section h2 {
+  font-weight: 800;
+}
+
+main #hero-section button {
+  background-color: #ff6565;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  outline: none;
+  border: 0px;
+  margin: 50px auto;
+}
+main #hero-section button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+main #hero-section p:nth-child(4) {
+  font-weight: 200;
+}
+
+@media (max-width: 770px) {
+  nav {
+    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  nav label {
+    width: 40px;
+    display: block;
+    position: absolute;
+    left: 30px;
+  }
+  nav img {
+    display: block;
+    max-width: 180px;
+    height: auto;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  nav input:checked ~ ul {
+    display: block;
+    position: absolute;
+    /* left: 50%; */
+    top: 100%;
+  }
+
+  main {
+    margin-top: -89.7px;
+  }
+  #hero-section p {
+    padding: 20px 20px;
+  }
+}
+
+/* END OF HERO SECTION */
+/* START OF WHAT WE DO SECTION */
+#do-section {
+  padding-top: 50px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* gap: 50px; */
+  background-color: white;
+  color: #071629;
+  margin: 0 auto;
+}
+#do-section div p:first-child {
+  max-width: 60%;
+  margin: 0 auto;
+}
+#do-section .do-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 0px;
+}
+#do-section .do-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+.holberton_school-icon-sound::before {
+  content: "\e90e";
+  color: #ff6565;
+  font-size: 100px;
+}
+.holberton_school-icon-video::before {
+  content: "\e910";
+  color: #ff6565;
+  font-size: 100px;
+}
+.holberton_school-icon-audio::before {
+  content: "\e90d";
+  font-size: 100px;
+  color: #ff6565;
+}
+.holberton_school-icon-ear::before {
+  content: "\e909";
+  color: #ff6565;
+  font-size: 100px;
+}
+@media (max-width: 770px) {
+  #do-section {
+    text-align: Center;
+    padding: 50px 20px;
+  }
+  /* #do-section .do-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  } */
+}
+
+/* END OF WHAT WE DO SECTION */
+
+/* START OF RESULTS SECTION */
+#results-section {
+  color: #ffffff;
+  padding: 100px 20px;
+  background: url(./headphones_hero_2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.results-item-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+
+  padding: 50px 10px;
+}
+.results-container p {
+  padding: 50px 20px;
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.results-item-container .result-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  z-index: 2;
+  height: 200px;
+}
+.results-item-container .result-item span {
+  display: block;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.results-item-container .result-item span:nth-child(1) {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.results-item-container .result-item span:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 18% 100%, 0% 35%);
+  background-color: #ff6565;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+/* END OF RESULTS SECTION*/
+/* START OF CONTACT SECTION */
+#contact-section {
+  height: 50vh;
+  color: #071629;
+  padding: 50px 10px;
+}
+#contact-section h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+#contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 400px;
+}
+#contact-section form label {
+  width: 100px;
+  font-weight: 600;
+}
+#contact-section form input {
+  width: 100%;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+#contact-section form button {
+  max-width: 200px;
+  background-color: #ff6565;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  outline: none;
+  border: 0px;
+  margin: 10px auto;
+}
