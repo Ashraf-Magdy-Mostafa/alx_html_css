@@ -38,6 +38,11 @@ body {
   padding: 0;
   height: 100%;
 }
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 header {
   padding: 20px 8%;
   z-index: 5;
@@ -112,25 +117,22 @@ nav input:checked + label span::after {
 }
 
 main {
-  /* min-height: calc(100vh + 90px); */
-
   margin-top: -104px;
 }
 main #hero-section {
   background-image: url("./headphones_hero_1.jpg");
   background-size: cover;
   background-position: center;
-
   padding-top: 50vh;
   text-align: center;
-  /* max-width: 800px; */
   margin: 0 auto;
+  padding-bottom: 100px;
+}
+main #hero-section .container {
+  padding: 0px 20px;
 }
 main #hero-section h2 {
   font-weight: 800;
-}
-main #hero-section p {
-  font-weight: 600;
 }
 
 main #hero-section button {
@@ -151,9 +153,6 @@ main #hero-section p:nth-child(4) {
 }
 
 @media (max-width: 770px) {
-  header {
-    padding: 20px 20px;
-  }
   nav {
     gap: 20px;
     justify-content: center;
@@ -185,8 +184,10 @@ main #hero-section p:nth-child(4) {
   }
 
   main {
-    padding: 0px 20px;
     margin-top: -89.7px;
+  }
+  #hero-section p {
+    padding: 20px 20px;
   }
 }
 
@@ -194,12 +195,11 @@ main #hero-section p:nth-child(4) {
 /* START OF WHAT WE DO SECTION */
 #do-section {
   padding-top: 50px;
-  /* max-width: 800px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* gap: 50px; */
   background-color: white;
   color: #071629;
   margin: 0 auto;
@@ -209,6 +209,7 @@ main #hero-section p:nth-child(4) {
   flex-direction: row;
   justify-content: center;
   gap: 30px;
+  padding: 50px 0px;
 }
 #do-section .do-item {
   display: flex;
@@ -235,7 +236,16 @@ main #hero-section p:nth-child(4) {
   color: #ff6565;
   font-size: 100px;
 }
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
+@media (max-width: 770px) {
+  #do-section {
+    text-align: Center;
+    padding: 50px 20px;
+  }
+  #do-section .do-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
 }
+
+/* END OF WHAT WE DO SECTION */
